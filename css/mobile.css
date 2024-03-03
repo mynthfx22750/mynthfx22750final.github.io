@@ -1,0 +1,90 @@
+@media screen and (max-width: 768px) {
+  /* Dinh dang cho phan banner for AS3 */
+  #banner {
+    top: 50px;
+    width: 480px;
+    align-items: center;
+  }
+  /* Dinh dang cho phan Navbar for AS3 */
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .name,
+  .info,
+  .resume,
+  .certificate,
+  .project {
+    border-left: none;
+    border-right: none;
+  }
+
+  /* Dinh dang cho phan thong tin ca nha for AS3 */
+  #about div.container {
+    justify-content: center;
+    height: auto;
+  }
+  #target {
+    margin-left: 0px;
+    padding: 0px;
+    width: 80%;
+  }
+  #target h1 {
+    padding-top: 20px;
+  }
+  #target p {
+    border: none;
+    margin: 0px;
+    font-size: 10px;
+  }
+  /* Dinh dang cho phan thong tin nghe nghiep for AS3 */
+
+  #job-info div.container {
+    margin: 0px;
+    height: auto;
+  }
+
+  /* Dinh dang cho phan chung chi giai thuong for AS3 */
+  #certificate {
+    height: fit-content;
+  }
+
+  .web-funix img {
+    width: 80%;
+    height: 60%;
+  }
+  .web-funix {
+    border-bottom: none;
+  }
+
+  .javascript-funix img {
+    width: 80%;
+    height: 60%;
+    padding-left: 0px;
+    border-left: 0px;
+  }
+
+  .javascript-funix {
+    border-bottom: none;
+    margin-top: 20px;
+  }
+
+  .database-funix img {
+    width: 80%;
+    height: 60%;
+  }
+
+  .paragraph {
+    border-left: none;
+    border-bottom: 1px solid #d6c08d;
+    height: fit-content;
+    margin-left: 0px;
+    width: 80%;
+  }
+
+  /* Dinh dang cho phan du an for AS3 */
+  .my-project {
+    justify-content: center;
+    height: fit-content;
+  }
+}

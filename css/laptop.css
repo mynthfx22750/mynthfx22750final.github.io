@@ -1,0 +1,570 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 10px;
+}
+p {
+  margin-bottom: 0px;
+}
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* Dinh dang cho banner cua CV */
+.My-banner {
+  position: relative;
+}
+
+#banner {
+  font-family: Verdana;
+  position: absolute;
+  top: 50px;
+  width: 1170px;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.photo {
+  filter: contrast(0.5);
+  width: 100%;
+  height: 30em;
+  object-fit: cover;
+}
+#banner h1 {
+  display: flex;
+  justify-content: center;
+}
+#banner span {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.74);
+  font-family: "Courier New";
+}
+/* Dinh dang cho Navbar cua CV */
+nav {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2.5fr 2fr 2fr 2fr;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.name {
+  align-self: center;
+  width: 300px;
+  text-align: center;
+  text-transform: none;
+  border-left: 0.1px solid rgba(128, 128, 128, 0.158);
+  border-right: 0.1px solid rgba(128, 128, 128, 0.158);
+}
+.name h1 {
+  font-size: 30px;
+}
+.name span {
+  color: rgba(128, 128, 128, 0.507);
+}
+.info {
+  border-left: 0.1px solid rgba(128, 128, 128, 0.158);
+  padding: 17px 0px 17px 0px;
+  justify-self: center;
+}
+.resume {
+  border-left: 0.1px solid rgba(128, 128, 128, 0.158);
+  padding: 17px 0px 17px 0px;
+  justify-self: center;
+  text-align: center;
+}
+.certificate {
+  padding: 17px 0px 17px 0px;
+  justify-self: center;
+  text-align: center;
+}
+.project {
+  border-left: 0.1px solid rgba(128, 128, 128, 0.158);
+  padding: 17px 0px 17px 0px;
+  justify-self: center;
+  text-align: center;
+}
+.icon-user {
+  color: blue;
+}
+.icon-doc-text-inv {
+  color: blue;
+}
+.icon-mail-alt {
+  color: blue;
+}
+.icon-star-1 {
+  color: blue;
+}
+
+/* Dinh dang cho thong tin ca nhan */
+
+#about {
+  width: 100%;
+  height: 100%;
+}
+
+#target {
+  margin-left: 20px;
+  margin-top: 0px;
+  width: 100%;
+}
+#target h1 {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+#target p {
+  border: none;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+/* Format khi input khong phai email for AS3 */
+#error-email {
+  color: red;
+}
+/* An thong tin ca nhan for AS3 */
+.detail-info {
+  display: none;
+}
+#personal-info {
+  margin-right: 20px;
+  background-color: rgba(128, 128, 128, 0.096);
+}
+
+#personal-info ul {
+  list-style: none;
+}
+.submitEmail {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.mt-40.info {
+  text-align: left;
+  border: none;
+  margin-left: 20px;
+}
+/* An thong tin nghe nghiep for AS3*/
+.section-content {
+  display: none;
+}
+.control-view {
+  display: none;
+}
+.icon {
+  padding-left: 20px;
+  color: blue;
+}
+/* Dinh dang cho thong tin nghe nghiep */
+#job-info {
+  padding-top: 20px;
+}
+#job-info div.container {
+  margin: 30px 0px 30px 0px;
+  font-family: Courier;
+}
+.experience {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 50px 10px;
+}
+.ic-toolbox {
+  width: 10%;
+  font-size: 30px;
+}
+
+div ul {
+  padding-left: 0px;
+  margin: 0px 20px 0px 30px;
+  font-size: 15px;
+  list-style: disc;
+}
+.currently {
+  padding: 2px;
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+}
+.education {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 50px 30px;
+}
+.ic-pencil {
+  width: 25%;
+  font-size: 40px;
+}
+.activity {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 50px 30px;
+}
+.favorite {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 50px 30px;
+}
+.ic-telescope {
+  width: 25%;
+  font-size: 40px;
+}
+
+.language {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 50px 30px;
+}
+.ic-mic {
+  width: 25%;
+  font-size: 40px;
+}
+.skill {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 50px 30px;
+}
+.ic-tools-2 {
+  width: 25%;
+  font-size: 40px;
+}
+.icon-favorite {
+  display: flex;
+  margin: 0px 0px 50px 30px;
+  gap: 8px;
+  font-family: Courier;
+}
+.icon-languages {
+  margin: 0px 0px 50px 30px;
+  gap: 8px;
+  font-family: Courier;
+}
+
+.icon-skill {
+  margin: 0px 0px 50px 30px;
+  gap: 8px;
+  font-family: Courier;
+}
+.ic-megaphone {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: blue;
+  border: 1px solid rgb(0, 0, 255);
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.ic-strategy {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: blue;
+  border: 1px solid rgb(0, 0, 255);
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.ic-hotairballoon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: blue;
+  border: 1px solid rgb(0, 0, 255);
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.ic-basket {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: blue;
+  border: 1px solid rgb(0, 0, 255);
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.english .level-1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.english .level-2 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.english .level-3 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.japan .level-1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.japan .level-2 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.japan .level-3 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.html-css .level-1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.html-css .level-2 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.html-css .level-3 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.java-script .level-1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.java-script .level-2 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.java-script .level-3 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.node-js .level-1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.node-js .level-2 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.node-js .level-3 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.bootstrap-5 .level-1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.bootstrap-5 .level-2 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.bootstrap-5 .level-3 {
+  background: rgba(128, 128, 128, 0.11);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+/* Tao border cho tung vung */
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.082);
+  padding: 20px;
+}
+/* Dinh dang cho chung chi-giai thuong */
+#certificate div.container {
+  font-family: Courier;
+}
+
+#certificate div.container h1 {
+  margin: 30px 0px 30px 0px;
+  font-family: Courier;
+}
+
+.image-certi {
+  margin-left: 10px;
+  font-family: monospace;
+  font-size: 12px;
+}
+.paragraph {
+  margin-left: 20px;
+  height: 80%;
+  font-size: 12px;
+  width: 85%;
+}
+.web-funix img {
+  width: 100%;
+  height: 80%;
+}
+.web-funix {
+  border-bottom: 1px solid #d6c08d;
+}
+.javascript-funix img {
+  width: 100%;
+  height: 80%;
+  padding-left: 20px;
+  border-left: 1px solid #d6c08d;
+}
+.javascript-funix {
+  border-bottom: 1px solid #d6c08d;
+}
+
+.database-funix img {
+  width: 100%;
+  height: 80%;
+}
+.database-funix {
+  margin-top: 20px;
+}
+.database-funix::before {
+  display: inline-block;
+  height: 1px;
+  width: 1200px;
+  color: #d6c08d;
+}
+
+/* Dinh dang cho du an */
+#project div.container {
+  font-family: Courier;
+}
+#project h1 {
+  display: inline-block;
+  margin: 30px 0px 30px 0px;
+}
+.my-project {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: auto;
+  justify-content: center;
+}
+table tr td {
+  font-size: 12px;
+}
+.career p {
+  height: 10px;
+}
+
+.project-cv {
+  height: fit-content;
+}
+.project_1 {
+  width: 100%;
+  height: 30%;
+  border: 1px solid rgba(128, 128, 128, 0.233);
+}
+.personal-cv {
+  padding: 10px 20px 20px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.233);
+}
+.sub-personal {
+  /* display: flex; */
+  margin: auto;
+  padding-top: 5px;
+  justify-content: left;
+  font-size: 12px;
+  gap: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.178);
+}
+.nam {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #199cdb;
+  color: white;
+  height: 25px;
+}
+table {
+  border: 1px solid rgba(128, 128, 128, 0.212);
+  width: 100%;
+  padding: 5px;
+  height: auto;
+  font-size: 100%;
+}
+.project-pet {
+  height: fit-content;
+}
+
+.project_2 {
+  width: 100%;
+  height: 30%;
+}
+.project-news {
+  height: fit-content;
+}
+
+.project_3 {
+  width: 100%;
+  height: 30%;
+}
+/* Dinh dang cho footer */
+.icon-facebook-circled {
+  color: blue;
+}
+.icon-linkedin-circled {
+  color: blue;
+}
+.icon-github-circled {
+  color: blue;
+}
+#footer {
+  margin-top: 20px;
+}
+#footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+  background-color: rgba(128, 128, 128, 0.082);
+  font-size: 20px;
+}
+/* END*/

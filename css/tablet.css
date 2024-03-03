@@ -1,0 +1,21 @@
+@media screen and (max-width: 991px) {
+  /* Dinh dang cho phan banner for AS3 */
+  #banner {
+    top: 50px;
+    width: 800px;
+    align-items: center;
+  }
+  /* Dinh dang cho phan navbar for AS3 */
+  nav {
+    font-size: 14px;
+  }
+  .name {
+    display: none;
+  }
+  /* Dinh dang cho phan thong tin nghe nghiep for AS3 */
+
+  #job-info div.container {
+    margin: 0px 20px;
+  }
+  /* Dinh dang cho phan du an for AS3 */
+}
